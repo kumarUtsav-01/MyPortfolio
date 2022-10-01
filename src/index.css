@@ -1,0 +1,4 @@
+/* Testing the css file is loaded and applied in the bundle output */
+body {
+    background-color:indigo;
+}
