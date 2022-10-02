@@ -1,0 +1,20 @@
+#loader {
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    position: fixed;
+    
+    border: 5px solid transparent;
+    border-top: 5px solid aqua;
+    border-radius: 50%;
+
+    animation: loader 2s linear infinite;
+}
+
+@keyframes loader {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% {transform: rotate(360deg);}
+}
