@@ -3,6 +3,8 @@
     height: 120px;
     background-color: transparent;
     position: fixed;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
     
     border: 5px solid transparent;
     border-top: 5px solid aqua;
