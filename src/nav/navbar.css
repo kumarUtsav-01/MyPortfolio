@@ -1,0 +1,60 @@
+#navContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    align-items: center;
+    float: right;
+    width: 100%;
+    margin-inline-end: 1rem;
+    margin-block-start: 1rem;
+}
+
+.navIndex {
+    color: rgb(129, 244, 226);
+    padding-right: 0.5rem; 
+}
+
+.navItem {
+    text-decoration: none;
+    color: rgb(136, 146, 176);
+    cursor: pointer;
+}
+
+.navItem:hover {
+    color: rgb(129, 244, 226);
+}
+
+#navWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(10, 25, 47, 0.9);
+}
+
+#hamburgerWrapper, #hamburgerContainer {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    #navContainer {
+        display: none;
+    }
+
+    #hamburgerWrapper {
+        display: block;
+        padding: 2rem 2rem 0 0;
+        float: right;
+    }
+
+    #hamburgerContainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+    }
+}
+
+.clearFloatContainer {
+    clear: both;
+}

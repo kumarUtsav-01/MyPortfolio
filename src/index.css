@@ -1,4 +1,49 @@
-/* Testing the css file is loaded and applied in the bundle output */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color:indigo;
+    font-family: 'Roboto';
+    font-display: fallback;
+    background-color: rgba(10, 25, 47);
+    margin: 1rem 1rem 1rem 1rem;
+    line-height: 1.5;
+    font-size: clamp(1.25rem, 1vw + 0.25rem, 2rem);
+}
+
+.layout {
+    display: flex;
+    padding-inline: 2rem;
+}
+
+.contentContainer {
+    padding-inline: 7rem;
+}
+
+.contentContainer > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+    .contentContainer {
+        padding-inline: 2rem;
+    }
+
+    .layout {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contentContainer {
+        padding-inline: 0;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .layout {
+        padding-inline: 1rem;
+    }
 }

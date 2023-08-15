@@ -1,0 +1,15 @@
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactTitle {
+    color:rgb(129, 244, 226);
+}
+
+.description {
+    color: rgb(136, 146, 176);
+    text-align: center;
+}
