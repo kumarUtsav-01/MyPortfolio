@@ -1,0 +1,25 @@
+.aboutMeContainer {
+    display: flex;
+}
+
+.image {
+    padding-inline-start: 2rem;
+    height: fit-content;
+}
+
+.content {
+    color: rgb(136, 146, 176);
+}
+
+@media screen and (max-width: 767px) {
+    .image {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .image {
+        width: 500px;
+        height: 500px;
+    }
+}
