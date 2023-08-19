@@ -1,5 +1,5 @@
 import { button } from "../button/button.js";
-import { experienceContainer } from "../experienceContainer/experienceContainer.js";
+import { experienceContainer } from "../tabNavChildContainer/experienceContainer.js";
 import {
   workDetailsList,
   designationList,

@@ -24,6 +24,7 @@ export function aboutMe() {
   const imageContainer = document.createElement("img");
   imageContainer.setAttribute("src", myImage);
   imageContainer.setAttribute("class", "image");
+  imageContainer.setAttribute("alt", "myProfileImage");
 
   divContainer.append(paraContainer, skillContainer);
 

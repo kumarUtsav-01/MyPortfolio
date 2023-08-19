@@ -6,8 +6,7 @@ import { descriptionContainer } from "./descriptionContainer/descriptionContaine
 import "./index.css";
 import { aboutMe } from "./section/aboutMe";
 import { experience } from "./section/experience";
-import { work } from "./workContainer/workContainer";
-import { contact } from "./contactContainer/contactContainer";
+import { contact } from "./section/contact";
 
 document.body.append(navbar());
 

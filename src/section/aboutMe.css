@@ -12,8 +12,15 @@
 }
 
 @media screen and (max-width: 767px) {
+    .aboutMeContainer {
+        flex-direction: column;
+    }
+
     .image {
-        display: none;
+        width: 200px;
+        height: 250px;
+        align-self: center;
+        padding-inline-start: 0;
     }
 }
 
