@@ -1,11 +1,16 @@
 import { button } from "../button/button";
-import "./contactContainer.css";
+import "./contact.css";
 
 export function contact() {
   const container = document.createElement("section");
   const title = document.createElement("div");
   const description = document.createElement("p");
-  const contactButton = button("Say Hi !!", function () {});
+  const contactButton = button("Say Hi !!", function () {
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=kumarutsav171@gmail.com",
+      "_blank"
+    );
+  });
 
   container.setAttribute("class", "contactContainer");
   title.setAttribute("class", "contactTitle");
