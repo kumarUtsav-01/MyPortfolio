@@ -7,6 +7,7 @@ import "./index.css";
 import { aboutMe } from "./section/aboutMe";
 import { experience } from "./section/experience";
 import { contact } from "./section/contact";
+import { navList } from "./constant/contant";
 
 document.body.append(navbar());
 
@@ -27,12 +28,29 @@ contentContainer.onclick = (e) => {
   }
 };
 
+function loadDescription(sectionName) {
+  switch (sectionName) {
+    case "About":
+      return aboutMe();
+
+    case "Experience":
+      return experience();
+
+    case "Work":
+      return work();
+
+    case "Contact":
+      return contact();
+  }
+}
+
 contentContainer.append(
   introduction(),
-  descriptionContainer(1, "About", aboutMe()),
-  descriptionContainer(2, "Experience", experience()),
-  // descriptionContainer(3, "Work", work()),
-  descriptionContainer(4, "Contact", contact())
+  ...navList
+    .reverse()
+    .map((section, index) =>
+      descriptionContainer(index + 1, section, loadDescription(section))
+    )
 );
 
 main.append(contentContainer);

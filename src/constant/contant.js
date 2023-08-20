@@ -22,7 +22,7 @@ export const workDetailsList = [
   ],
 ];
 
-export const navList = ["About", "Experience", "Work", "Contact"];
+export const navList = ["About", "Experience", "Contact"];
 
 export const skillList = [
   "React",
