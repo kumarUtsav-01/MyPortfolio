@@ -43,6 +43,16 @@ export function navbar() {
     })
   );
 
+  hamburgerContainer.insertAdjacentElement(
+    "beforeend",
+    button("Resume", function () {
+      window.open(
+        "https://drive.google.com/file/d/1_BhAKLH6Q7dMq4k4ZAbOxm3Sog1WYxAp/view?usp=drive_link",
+        "_blank"
+      );
+    })
+  );
+
   hamburgerWrapper.appendChild(generateImage(hamburgerMenu, "hamburger menu"));
   hamburgerWrapper.onclick = () => {
     const isWrapperContainerVisible =
