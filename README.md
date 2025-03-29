@@ -1,2 +1,2 @@
-# TheWebber
-A single stop portal for interesting articles and discussions on web development.
+# MyPortfolio
+My portfolio using HTML, JS and CSS. Deployed to [netlify](https://kumarutsav.netlify.app/)
