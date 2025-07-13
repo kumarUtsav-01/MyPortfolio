@@ -1,0 +1,9 @@
+.commonList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.commonList > li {
+    margin-block: 0.5rem;
+    min-width: 50%;
+}

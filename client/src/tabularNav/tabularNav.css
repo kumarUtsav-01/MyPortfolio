@@ -1,0 +1,38 @@
+.tabularNavWrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.tabularNav {
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+}
+
+.overrideButtonSelect {
+    color:rgb(129, 244, 226);
+    border-inline-start: 2px solid rgb(129, 244, 226);
+    padding: 0.75rem;
+}
+
+.tabularNavDescriptionContainer {
+    color: rgb(136, 146, 176);
+    overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    .tabularNav {
+        flex-direction: row;
+        gap: 2rem;
+        padding-block-end: 2rem;
+    }
+
+    .tabularNavWrapper {
+        display: block;
+    }
+
+    .overrideButtonSelect {
+        border-inline-start: 0;
+        border-block-end: 2px solid rgb(129, 244, 226);
+    }
+}
