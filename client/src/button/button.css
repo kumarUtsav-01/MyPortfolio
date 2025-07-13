@@ -1,0 +1,38 @@
+.button {
+    border: 1px solid rgb(129, 244, 226);
+    border-radius: 10%;
+    padding: 0.75rem;
+    color:rgb(129, 244, 226);
+    width: fit-content;
+
+    cursor: pointer;
+}
+
+.tabularNavButton {
+    color: rgb(136, 146, 176);
+    border-inline-start: 1px solid rgb(136, 146, 176);
+    padding: 0.75rem;
+}
+
+.button:hover, .tabularNavButton:hover {
+    background-color: rgba(17, 34, 64, 1);
+    color: rgb(129, 244, 226);
+}
+
+.tabularNavButtonSelected {
+    color:rgb(129, 244, 226);
+    border-inline-start: 2px solid rgb(129, 244, 226);
+    padding: 0.75rem;
+}
+
+@media screen and (max-width: 767px) {
+    .tabularNavButtonSelected {
+        border-inline-start: none;
+        border-block-end: 2px solid rgb(129, 244, 226);
+    }
+
+    .tabularNavButton {
+        border-inline-start: none;
+        border-block-end: 1px solid rgb(136, 146, 176);
+    }
+}

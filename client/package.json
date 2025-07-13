@@ -1,0 +1,39 @@
+{
+  "name": "thewebber",
+  "version": "1.0.0",
+  "description": "Kumar Utsav resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "dev": "webpack serve --open --config webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumarUtsav-01/TheWebber.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Kumar Utsav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumarUtsav-01/TheWebber/issues"
+  },
+  "homepage": "https://github.com/kumarUtsav-01/TheWebber#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.9.0"
+  }
+}
